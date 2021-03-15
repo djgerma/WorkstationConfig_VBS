@@ -1,0 +1,1 @@
+icacls "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\SwReporter" /inheritance:r /deny "Everyone:(OI)(CI)(F)" "ANONYMOUS LOGON:(OI)(CI)(F)"
