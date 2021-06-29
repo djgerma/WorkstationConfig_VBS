@@ -194,7 +194,7 @@ End If
 
 '#######################################################################################################################################################################
 '5.5. Check if Google Chrome is installed. If not installed, install it. 
-If Not objFSO.FileExists("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe") Then
+If Not ((objFSO.FileExists("C:\Program Files (x86)\Google\Chrome\Application\chrome.exe") OR objFSO.FileExists("C:\Program Files\Google\Chrome\Application\chrome.exe"))) Then
 BtnCode= objShell.Popup ("Google Chrome not Installed! It will be installed Automatically!", 3)
 'This will copy install files to install directory
 objFSO.CopyFile "\\server\share\folder\software\Memex\Chrome\*.*", "C:\MOP_Install\"
